@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -9,23 +10,14 @@ public class MoveCar : MonoBehaviour
     public bool canMove;
     public float speed;
     // Start is called before the first frame update
-    void Start()
-    {   
-        if(canMove)
-            transform.DOMove(new Vector3(transform.position.x,transform.position.y,EndPoint.position.z), speed);
-    }
-    
+
     
     // Update is called once per frame
     void Update()
     { 
         if(canMove)
-            transform.DOMove(new Vector3(transform.position.x,transform.position.y,EndPoint.position.z), speed);
-
+            transform.DOMove(EndPoint.transform.position, speed);
     }
 
-    public void moveCar()
-    {
-       
-    }
+  
 }

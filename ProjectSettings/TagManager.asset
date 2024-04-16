@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PoliceFollow
   layers:
   - Default
   - TransparentFX

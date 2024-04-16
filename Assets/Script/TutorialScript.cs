@@ -13,14 +13,10 @@ public class TutorialScript : MonoBehaviour
 
     private IEnumerator hideTutorial()
     {
-        yield return  new WaitForSeconds(3);
+        yield return  new WaitForSeconds(5);
         transform.gameObject.SetActive(false);
-     //   transform.DOScale(Vector3.zero, 1);
+   
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }
